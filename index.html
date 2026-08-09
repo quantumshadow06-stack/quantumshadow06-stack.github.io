@@ -3,85 +3,124 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SK - Développeur Web</title>
+  <title>SK - Développeur Web à Bouaké</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background: #fff; color: #333; }
-    h2, h3 { border-left: 4px solid #25D366; padding-left: 10px; }
-    .badge { display: inline-block; background: #e8f5e9; color: #2e7d32; padding: 8px 15px; border-radius: 20px; margin: 5px; }
-    .btn-whatsapp { display: block; background: #25D366; color: white; padding: 14px; border-radius: 8px; text-decoration: none; font-weight: bold; text-align: center; margin-top: 15px; }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+    body { background: #f4f4f4; color: #333; padding: 15px; }
+    .container { max-width: 600px; margin: auto; background: white; border-radius: 15px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    h1 { color: #25D366; text-align: center; }
+    h2 { border-left: 4px solid #25D366; padding-left: 10px; margin: 25px 0 15px 0; font-size: 20px; }
+    .badge { display: inline-block; background: #e8f5e9; color: #2e7d32; padding: 8px 15px; border-radius: 20px; margin: 5px 5px 5px 0; font-weight: bold; }
+    .btn { display: block; background: #25D366; color: white; padding: 14px; border-radius: 8px; text-decoration: none; font-weight: bold; text-align: center; margin-top: 15px; }
+    details { background: white; border-radius: 10px; padding: 15px; margin-bottom: 12px; border-left: 4px solid #25D366; }
+    summary { font-weight: bold; font-size: 16px; cursor: pointer; display: flex; justify-content: space-between; list-style: none; }
+    summary::-webkit-details-marker { display: none; }
+    .price { color: #25D366; }
   </style>
 </head>
 <body>
+  <div class="container">
 
-  <h2>Mes Compétences</h2>
-  <span class="badge">HTML</span>
-  <span class="badge">Sites Vitrines</span>
+    <!-- 1. EN-TETE -->
+    <div style="text-align: center; margin-bottom: 20px;">
+      <h1>SK</h1>
+      <p>Développeur Web en formation | Bouaké, CI</p>
+    </div>
 
-  <h2>Mes Services</h2>
-  <section style="background:#f8f9fa; padding:20px; border-radius:12px;">
+    <!-- 2. MES COMPETENCES -->
+    <h2>Mes Compétences</h2>
+    <span class="badge">HTML5</span>
+    <span class="badge">CSS3</span>
+    <span class="badge">Sites Vitrines</span>
+    <span class="badge">Responsive Mobile</span>
+    <span class="badge">WhatsApp Business</span>
 
-    <details style="background:white; border-radius:10px; padding:15px; margin-bottom:12px; border-left:4px solid #25D366;">
-      <summary style="font-weight:bold; font-size:17px; cursor:pointer; display:flex; justify-content:space-between;">
-        <span>🌐 Site Vitrine</span> <span style="color:#25D366;">Dès 50 000 FCFA</span>
-      </summary>
-      <div style="margin-top:12px;">
+    <!-- 3. MES SERVICES AVEC LES 5 OPTIONS -->
+    <h2>Mes Services</h2>
+
+    <details>
+      <summary><span>🌐 Site Vitrine</span> <span class="price">Dès 50 000 FCFA</span></summary>
+      <div style="margin-top: 12px;">
         <p>✅ 1 à 5 pages : Accueil, À propos, Services, Contact</p>
-        <p>✅ Design moderne + 100% Mobile</p>
+        <p>✅ Design moderne 100% Mobile</p>
+        <p>✅ Bouton WhatsApp + Formulaire</p>
         <p>✅ Livraison en 5 jours</p>
-        <a href="https://wa.me/2250545483998?text=Bonjour%20SK%20je%20veux%20un%20Site%20Vitrine%20a%2050.000F" target="_blank" class="btn-whatsapp">Commander sur WhatsApp</a>
+        <a href="https://wa.me/2250545483998?text=Bonjour%20SK%20je%20veux%20un%20Site%20Vitrine%20a%2050.000F" target="_blank" class="btn">Commander sur WhatsApp</a>
       </div>
     </details>
 
-    <details style="background:white; border-radius:10px; padding:15px; margin-bottom:12px; border-left:4px solid #25D366;">
-      <summary style="font-weight:bold; font-size:17px; cursor:pointer; display:flex; justify-content:space-between;">
-        <span>🛒 Site E-commerce</span> <span style="color:#25D366;">Dès 150 000 FCFA</span>
-      </summary>
-      <div style="margin-top:12px;">
-        <p>✅ Boutique en ligne illimitée</p>
+    <details>
+      <summary><span>🛒 Site E-commerce</span> <span class="price">Dès 150 000 FCFA</span></summary>
+      <div style="margin-top: 12px;">
+        <p>✅ Boutique en ligne produits illimités</p>
         <p>✅ Paiement Mobile Money + Carte</p>
+        <p>✅ Gestion des commandes</p>
         <p>✅ Livraison en 10 jours</p>
-        <a href="https://wa.me/2250545483998?text=Bonjour%20SK%20je%20veux%20un%20Site%20E-commerce%20a%20150.000F" target="_blank" class="btn-whatsapp">Commander sur WhatsApp</a>
+        <a href="https://wa.me/2250545483998?text=Bonjour%20SK%20je%20veux%20un%20Site%20E-commerce%20a%20150.000F" target="_blank" class="btn">Commander sur WhatsApp</a>
       </div>
     </details>
 
-    <details style="background:white; border-radius:10px; padding:15px; border-left:4px solid #25D366;">
-      <summary style="font-weight:bold; font-size:17px; cursor:pointer; display:flex; justify-content:space-between;">
-        <span>🔄 Refonte de Site</span> <span style="color:#25D366;">Sur Devis</span>
-      </summary>
-      <div style="margin-top:12px;">
+    <details>
+      <summary><span>📄 Landing Page</span> <span class="price">Dès 30 000 FCFA</span></summary>
+      <div style="margin-top: 12px;">
+        <p>✅ 1 seule page pour vendre un produit</p>
+        <p>✅ Design qui convertit en client</p>
+        <p>✅ Idéal pour pub Facebook/WhatsApp</p>
+        <p>✅ Livraison en 3 jours</p>
+        <a href="https://wa.me/2250545483998?text=Bonjour%20SK%20je%20veux%20une%20Landing%20Page%20a%2030.000F" target="_blank" class="btn">Commander sur WhatsApp</a>
+      </div>
+    </details>
+
+    <details>
+      <summary><span>🔄 Refonte de Site</span> <span class="price">Sur Devis</span></summary>
+      <div style="margin-top: 12px;">
         <p>✅ Moderniser votre ancien site</p>
         <p>✅ Rendre le site plus rapide</p>
-        <a href="https://wa.me/2250545483998?text=Bonjour%20SK%20je%20veux%20une%20Refonte%20de%20mon%20Site" target="_blank" class="btn-whatsapp">Demander un devis</a>
+        <p>✅ Optimisation pour Google</p>
+        <a href="https://wa.me/2250545483998?text=Bonjour%20SK%20je%20veux%20une%20Refonte%20de%20mon%20Site" target="_blank" class="btn">Demander un devis</a>
       </div>
     </details>
-    <p style="text-align:center; font-style:italic; margin-top:15px;">Paiement 50% avant, 50% à la livraison</p>
-  </section>
 
-  <h2>Pourquoi avoir un site web ?</h2>
-  <section style="background:#f8f9fa; padding:20px; border-radius:12px;">
-    <button onclick="basculerInfo()" style="width:100%; background:#25D366; color:white; border:none; padding:14px; border-radius:10px; font-size:16px; cursor:pointer;">
+    <details>
+      <summary><span>🛠️ Maintenance Mensuelle</span> <span class="price">10 000 FCFA/mois</span></summary>
+      <div style="margin-top: 12px;">
+        <p>✅ Mise à jour du contenu</p>
+        <p>✅ Sauvegarde + Sécurité</p>
+        <p>✅ Support WhatsApp 7j/7</p>
+        <a href="https://wa.me/2250545483998?text=Bonjour%20SK%20je%20veux%20la%20Maintenance%20a%2010.000F" target="_blank" class="btn">Prendre un abonnement</a>
+      </div>
+    </details>
+
+    <p style="text-align: center; font-style: italic; margin-top: 15px; font-size: 14px;">Paiement 50% avant, 50% à la livraison</p>
+
+    <!-- 4. POURQUOI AVOIR UN SITE -->
+    <h2>Pourquoi avoir un site web ?</h2>
+    <button onclick="toggleInfo()" style="width: 100%; background: #25D366; color: white; border: none; padding: 14px; border-radius: 10px; font-size: 16px; cursor: pointer; font-weight: bold;">
       ▶ En savoir plus ✨
     </button>
-    <div id="infoCachee" style="display:none; margin-top:15px;">
-      <p>✅ Visibilité 24h/24</p>
+    <div id="infoCachee" style="display: none; margin-top: 15px;">
+      <p>✅ Visibilité 24h/24 même quand tu dors</p>
       <p>✅ Crédibilité professionnelle</p>
-      <p>✅ Plus de clients</p>
-      <p>✅ Contrôle total</p>
+      <p>✅ Plus de clients pour ton business</p>
+      <p>✅ Tu contrôles ton image</p>
     </div>
-  </section>
 
-  <div style="margin-top:20px; background:#fff3cd; padding:20px; border-radius:12px;">
-    <h3>Pourquoi me choisir ?</h3>
-    <p>Je suis élève motivé et passionné. Je propose des <strong>prix étudiants</strong> et un <strong>service sérieux</strong>.</p>
-  </div>
+    <!-- 5. POURQUOI ME CHOISIR -->
+    <div style="margin-top: 20px; background: #fff3cd; padding: 20px; border-radius: 12px;">
+      <h2>Pourquoi me choisir ?</h2>
+      <p>Je suis élève motivé et passionné. Je propose des <strong>prix étudiants</strong> et un <strong>service sérieux</strong>. Chaque projet est unique.</p>
+    </div>
 
-  <div style="margin-top:20px;">
-    <h3>Contactez-moi</h3>
-    <a href="https://wa.me/2250545483998" target="_blank" class="btn-whatsapp">Parler sur WhatsApp</a>
+    <!-- 6. CONTACT -->
+    <div style="margin-top: 20px;">
+      <h2>Contactez-moi</h2>
+      <a href="https://wa.me/2250545483998" target="_blank" class="btn">Parler sur WhatsApp</a>
+    </div>
+
   </div>
 
   <script>
-  function basculerInfo() {
+  function toggleInfo() {
     var x = document.getElementById("infoCachee");
     if (x.style.display === "none") {
       x.style.display = "block";
