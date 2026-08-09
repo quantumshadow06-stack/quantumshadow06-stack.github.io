@@ -34,25 +34,54 @@
         <div style="margin-top: 30px;">
             <h3 style="color: #2c3e50; border-left: 4px solid #27ae60; padding-left: 10px;">Mes Tarifs</h3>
             
-            <button onclick="document.getElementById('tarifs').style.display='block'; this.style.display='none'" 
-            style="background: #27ae60; color: white; padding: 15px 25px; border: none; border-radius: 8px; font-size: 16px; font-weight: bold; cursor: pointer; width: 100%;">
-                💰 Cliquez ici pour voir mes tarifs
-<h3>Pourquoi avoir un site web ?</h3>
+            <!-- DEBUT SECTION POURQUOI SITE WEB -->
+<section style="padding:20px; background:#ffffff; border-radius:12px; margin:20px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
 
-<button onclick="document.getElementById('infoSite').style.display='block'" 
-style="background:#25D366; color:white; padding:12px; border:none; border-radius:8px;">
-En savoir plus
-</button>
+  <h3 style="border-left: 4px solid #25D366; padding-left:10px; color:#222; margin-bottom:15px;">
+    Pourquoi avoir un site web ?
+  </h3>
 
-<div id="infoSite" style="display:none; margin-top:15px; background:#f0fff4; padding:15px; border-radius:8px;">
-  <p>✅ <b>Ouvert 24h/24</b> - Les clients te trouvent même la nuit</p>
-  <p>✅ <b>Plus de crédibilité</b> - On fait confiance aux pros avec site</p>
-  <p>✅ <b>Plus de clients</b> - À Bouaké et partout dans le monde</p>
-  
-  <a href="https://wa.me/225XXXXXXXX" style="display:block; margin-top:10px; text-align:center; background:#25D366; color:white; padding:10px; border-radius:8px; text-decoration:none;">
-  📞 Discuter de mon projet
-  </a>
-</div>
+  <!-- BOUTON -->
+  <button onclick="togglePourquoi()" 
+  style="background:#25D366; color:white; padding:14px 20px; border:none; border-radius:10px; font-size:16px; font-weight:bold; width:100%; cursor:pointer;">
+    En savoir plus ✨
+  </button>
+
+  <!-- CONTENU CACHÉ -->
+  <div id="infoSite" style="display:none; margin-top:15px; animation: fadeIn 0.4s;">
+    
+    <div style="background:#f0fff4; padding:15px; border-radius:10px; margin-bottom:15px;">
+      <p style="margin:8px 0;">✅ <b>Ouvert 24h/24</b><br>Ta boutique travaille même quand tu dors</p>
+      <p style="margin:8px 0;">✅ <b>Plus de crédibilité</b><br>Les clients font confiance aux entreprises avec site</p>
+      <p style="margin:8px 0;">✅ <b>Plus de clients</b><br>À Bouaké et dans le monde entier te trouvent sur Google</p>
+      <p style="margin:8px 0;">✅ <b>Différent de la concurrence</b><br>90% des commerçants n'ont pas de site. Toi si.</p>
+    </div>
+
+    <p style="text-align:center; font-style:italic; color:#555; font-size:14px;">
+      Paiement 50% avant, 50% à la livraison
+    </p>
+
+    <!-- BOUTON WHATSAPP -->
+    <a href="https://wa.me/2250545483998text=Bonjour%20je%20veux%20un%20site%20web" 
+    target="_blank"
+    style="display:block; margin-top:15px; text-align:center; background:#25D366; color:white; padding:14px; border-radius:10px; text-decoration:none; font-weight:bold; font-size:16px;">
+      📞 Discuter de mon projet sur WhatsApp
+    </a>
+  </div>
+
+</section>
+
+<script>
+function togglePourquoi() {
+  var x = document.getElementById("infoSite");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+<!-- FIN SECTION POURQUOI SITE WEB -->
 
 <script>
 function toggleInfo() {
